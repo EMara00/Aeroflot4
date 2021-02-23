@@ -32,7 +32,33 @@ namespace Aeroport
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.informationBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Familia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Otchestvo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Document = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Nomer = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Grazdanstvo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Compania = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Class = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StrOtpr = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.StrPrib = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.idDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.familiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nameDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.otchestvoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.documentDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.nomerDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.grazdanstvoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.companiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.classDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.strOtprDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateTimeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.strPribDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.informationBindingSource4 = new System.Windows.Forms.BindingSource(this.components);
+            this.dataBaseAeportDataSet11BindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.dataBaseAeportDataSet11 = new Aeroport.DataBaseAeportDataSet1();
             this.informationBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.informationBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.users12BindingSource = new System.Windows.Forms.BindingSource(this.components);
@@ -56,30 +82,26 @@ namespace Aeroport
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.dataBaseAeportDataSet11 = new Aeroport.DataBaseAeportDataSet1();
-            this.informationBindingSource3 = new System.Windows.Forms.BindingSource(this.components);
             this.informationTableAdapter = new Aeroport.DataBaseAeportDataSet1TableAdapters.InformationTableAdapter();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Familia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Name = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Otchestvo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Document = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Nomer = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Grazdanstvo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Compania = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Class = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StrOtpr = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DateTime = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.StrPrib = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataBaseAeportDataSet12 = new Aeroport.DataBaseAeportDataSet1();
+            this.dataBaseAeportDataSet2 = new Aeroport.DataBaseAeportDataSet();
+            this.informationTableAdapter1 = new Aeroport.DataBaseAeportDataSet1TableAdapters.InformationTableAdapter();
+            this.dataBaseAeportDataSet21 = new Aeroport.DataBaseAeportDataSet2();
+            this.informationBindingSource2 = new System.Windows.Forms.BindingSource(this.components);
+            this.informationTableAdapter2 = new Aeroport.DataBaseAeportDataSet2TableAdapters.InformationTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.informationBindingSource2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.informationBindingSource4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseAeportDataSet11BindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseAeportDataSet11)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.informationBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.informationBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.users12BindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataBaseAeportDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataBaseAeportDataSet11)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.informationBindingSource3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseAeportDataSet12)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseAeportDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseAeportDataSet21)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.informationBindingSource2)).BeginInit();
             this.SuspendLayout();
             // 
             // dataGridView1
@@ -101,8 +123,20 @@ namespace Aeroport
             this.Class,
             this.StrOtpr,
             this.DateTime,
-            this.StrPrib});
-            this.dataGridView1.DataSource = this.informationBindingSource3;
+            this.StrPrib,
+            this.idDataGridViewTextBoxColumn,
+            this.familiaDataGridViewTextBoxColumn,
+            this.nameDataGridViewTextBoxColumn,
+            this.otchestvoDataGridViewTextBoxColumn,
+            this.documentDataGridViewTextBoxColumn,
+            this.nomerDataGridViewTextBoxColumn,
+            this.grazdanstvoDataGridViewTextBoxColumn,
+            this.companiaDataGridViewTextBoxColumn,
+            this.classDataGridViewTextBoxColumn,
+            this.strOtprDataGridViewTextBoxColumn,
+            this.dateTimeDataGridViewTextBoxColumn,
+            this.strPribDataGridViewTextBoxColumn});
+            this.dataGridView1.DataSource = this.informationBindingSource2;
             this.dataGridView1.GridColor = System.Drawing.SystemColors.AppWorkspace;
             this.dataGridView1.Location = new System.Drawing.Point(-1, -2);
             this.dataGridView1.Name = "dataGridView1";
@@ -110,9 +144,188 @@ namespace Aeroport
             this.dataGridView1.Size = new System.Drawing.Size(1142, 275);
             this.dataGridView1.TabIndex = 0;
             // 
-            // informationBindingSource2
+            // Column1
             // 
-            this.informationBindingSource2.DataMember = "Information";
+            this.Column1.DataPropertyName = "Id";
+            this.Column1.HeaderText = "ID";
+            this.Column1.Name = "Column1";
+            this.Column1.ReadOnly = true;
+            // 
+            // Familia
+            // 
+            this.Familia.DataPropertyName = "Familia";
+            this.Familia.HeaderText = "Фамилия";
+            this.Familia.Name = "Familia";
+            this.Familia.ReadOnly = true;
+            // 
+            // Name
+            // 
+            this.Name.DataPropertyName = "Name";
+            this.Name.HeaderText = "Имя";
+            this.Name.Name = "Name";
+            this.Name.ReadOnly = true;
+            // 
+            // Otchestvo
+            // 
+            this.Otchestvo.DataPropertyName = "Otchestvo";
+            this.Otchestvo.HeaderText = "Отчество";
+            this.Otchestvo.Name = "Otchestvo";
+            this.Otchestvo.ReadOnly = true;
+            // 
+            // Document
+            // 
+            this.Document.DataPropertyName = "Document";
+            this.Document.HeaderText = "Документ";
+            this.Document.Name = "Document";
+            this.Document.ReadOnly = true;
+            // 
+            // Nomer
+            // 
+            this.Nomer.DataPropertyName = "Nomer";
+            this.Nomer.HeaderText = "Номер документа";
+            this.Nomer.Name = "Nomer";
+            this.Nomer.ReadOnly = true;
+            // 
+            // Grazdanstvo
+            // 
+            this.Grazdanstvo.DataPropertyName = "Grazdanstvo";
+            this.Grazdanstvo.HeaderText = "Гражданство";
+            this.Grazdanstvo.Name = "Grazdanstvo";
+            this.Grazdanstvo.ReadOnly = true;
+            // 
+            // Compania
+            // 
+            this.Compania.DataPropertyName = "Compania";
+            this.Compania.HeaderText = "Компания перелета";
+            this.Compania.Name = "Compania";
+            this.Compania.ReadOnly = true;
+            // 
+            // Class
+            // 
+            this.Class.DataPropertyName = "Class";
+            this.Class.HeaderText = "Класс";
+            this.Class.Name = "Class";
+            this.Class.ReadOnly = true;
+            // 
+            // StrOtpr
+            // 
+            this.StrOtpr.DataPropertyName = "StrOtpr";
+            this.StrOtpr.HeaderText = "Страна и город отправления";
+            this.StrOtpr.Name = "StrOtpr";
+            this.StrOtpr.ReadOnly = true;
+            // 
+            // DateTime
+            // 
+            this.DateTime.DataPropertyName = "DateTime";
+            this.DateTime.HeaderText = "Дата и время отправления";
+            this.DateTime.Name = "DateTime";
+            this.DateTime.ReadOnly = true;
+            // 
+            // StrPrib
+            // 
+            this.StrPrib.DataPropertyName = "StrPrib";
+            this.StrPrib.HeaderText = "Страна и город прибытия";
+            this.StrPrib.Name = "StrPrib";
+            this.StrPrib.ReadOnly = true;
+            // 
+            // idDataGridViewTextBoxColumn
+            // 
+            this.idDataGridViewTextBoxColumn.DataPropertyName = "Id";
+            this.idDataGridViewTextBoxColumn.HeaderText = "Id";
+            this.idDataGridViewTextBoxColumn.Name = "idDataGridViewTextBoxColumn";
+            this.idDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // familiaDataGridViewTextBoxColumn
+            // 
+            this.familiaDataGridViewTextBoxColumn.DataPropertyName = "Familia";
+            this.familiaDataGridViewTextBoxColumn.HeaderText = "Familia";
+            this.familiaDataGridViewTextBoxColumn.Name = "familiaDataGridViewTextBoxColumn";
+            this.familiaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nameDataGridViewTextBoxColumn
+            // 
+            this.nameDataGridViewTextBoxColumn.DataPropertyName = "Name";
+            this.nameDataGridViewTextBoxColumn.HeaderText = "Name";
+            this.nameDataGridViewTextBoxColumn.Name = "nameDataGridViewTextBoxColumn";
+            this.nameDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // otchestvoDataGridViewTextBoxColumn
+            // 
+            this.otchestvoDataGridViewTextBoxColumn.DataPropertyName = "Otchestvo";
+            this.otchestvoDataGridViewTextBoxColumn.HeaderText = "Otchestvo";
+            this.otchestvoDataGridViewTextBoxColumn.Name = "otchestvoDataGridViewTextBoxColumn";
+            this.otchestvoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // documentDataGridViewTextBoxColumn
+            // 
+            this.documentDataGridViewTextBoxColumn.DataPropertyName = "Document";
+            this.documentDataGridViewTextBoxColumn.HeaderText = "Document";
+            this.documentDataGridViewTextBoxColumn.Name = "documentDataGridViewTextBoxColumn";
+            this.documentDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // nomerDataGridViewTextBoxColumn
+            // 
+            this.nomerDataGridViewTextBoxColumn.DataPropertyName = "Nomer";
+            this.nomerDataGridViewTextBoxColumn.HeaderText = "Nomer";
+            this.nomerDataGridViewTextBoxColumn.Name = "nomerDataGridViewTextBoxColumn";
+            this.nomerDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // grazdanstvoDataGridViewTextBoxColumn
+            // 
+            this.grazdanstvoDataGridViewTextBoxColumn.DataPropertyName = "Grazdanstvo";
+            this.grazdanstvoDataGridViewTextBoxColumn.HeaderText = "Grazdanstvo";
+            this.grazdanstvoDataGridViewTextBoxColumn.Name = "grazdanstvoDataGridViewTextBoxColumn";
+            this.grazdanstvoDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // companiaDataGridViewTextBoxColumn
+            // 
+            this.companiaDataGridViewTextBoxColumn.DataPropertyName = "Compania";
+            this.companiaDataGridViewTextBoxColumn.HeaderText = "Compania";
+            this.companiaDataGridViewTextBoxColumn.Name = "companiaDataGridViewTextBoxColumn";
+            this.companiaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // classDataGridViewTextBoxColumn
+            // 
+            this.classDataGridViewTextBoxColumn.DataPropertyName = "Class";
+            this.classDataGridViewTextBoxColumn.HeaderText = "Class";
+            this.classDataGridViewTextBoxColumn.Name = "classDataGridViewTextBoxColumn";
+            this.classDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // strOtprDataGridViewTextBoxColumn
+            // 
+            this.strOtprDataGridViewTextBoxColumn.DataPropertyName = "StrOtpr";
+            this.strOtprDataGridViewTextBoxColumn.HeaderText = "StrOtpr";
+            this.strOtprDataGridViewTextBoxColumn.Name = "strOtprDataGridViewTextBoxColumn";
+            this.strOtprDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // dateTimeDataGridViewTextBoxColumn
+            // 
+            this.dateTimeDataGridViewTextBoxColumn.DataPropertyName = "DateTime";
+            this.dateTimeDataGridViewTextBoxColumn.HeaderText = "DateTime";
+            this.dateTimeDataGridViewTextBoxColumn.Name = "dateTimeDataGridViewTextBoxColumn";
+            this.dateTimeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // strPribDataGridViewTextBoxColumn
+            // 
+            this.strPribDataGridViewTextBoxColumn.DataPropertyName = "StrPrib";
+            this.strPribDataGridViewTextBoxColumn.HeaderText = "StrPrib";
+            this.strPribDataGridViewTextBoxColumn.Name = "strPribDataGridViewTextBoxColumn";
+            this.strPribDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // informationBindingSource4
+            // 
+            this.informationBindingSource4.DataMember = "Information";
+            this.informationBindingSource4.DataSource = this.dataBaseAeportDataSet11BindingSource;
+            // 
+            // dataBaseAeportDataSet11BindingSource
+            // 
+            this.dataBaseAeportDataSet11BindingSource.DataSource = this.dataBaseAeportDataSet11;
+            this.dataBaseAeportDataSet11BindingSource.Position = 0;
+            // 
+            // dataBaseAeportDataSet11
+            // 
+            this.dataBaseAeportDataSet11.DataSetName = "DataBaseAeportDataSet1";
+            this.dataBaseAeportDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
             // users12BindingSource
             // 
@@ -155,7 +368,6 @@ namespace Aeroport
             this.Save.TabIndex = 3;
             this.Save.Text = "Сбросить фильтр";
             this.Save.UseVisualStyleBackColor = false;
-            this.Save.Click += new System.EventHandler(this.Save_Click);
             // 
             // users_12TableAdapter
             // 
@@ -290,103 +502,37 @@ namespace Aeroport
             this.textBox4.Size = new System.Drawing.Size(60, 20);
             this.textBox4.TabIndex = 72;
             // 
-            // dataBaseAeportDataSet11
-            // 
-            this.dataBaseAeportDataSet11.DataSetName = "DataBaseAeportDataSet1";
-            this.dataBaseAeportDataSet11.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // informationBindingSource3
-            // 
-            this.informationBindingSource3.DataMember = "Information";
-            this.informationBindingSource3.DataSource = this.dataBaseAeportDataSet11;
-            // 
             // informationTableAdapter
             // 
             this.informationTableAdapter.ClearBeforeFill = true;
             // 
-            // Column1
+            // dataBaseAeportDataSet12
             // 
-            this.Column1.DataPropertyName = "Id";
-            this.Column1.HeaderText = "ID";
-            this.Column1.Name = "Column1";
-            this.Column1.ReadOnly = true;
+            this.dataBaseAeportDataSet12.DataSetName = "DataBaseAeportDataSet1";
+            this.dataBaseAeportDataSet12.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // Familia
+            // dataBaseAeportDataSet2
             // 
-            this.Familia.DataPropertyName = "Familia";
-            this.Familia.HeaderText = "Фамилия";
-            this.Familia.Name = "Familia";
-            this.Familia.ReadOnly = true;
+            this.dataBaseAeportDataSet2.DataSetName = "DataBaseAeportDataSet";
+            this.dataBaseAeportDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // Name
+            // informationTableAdapter1
             // 
-            this.Name.DataPropertyName = "Name";
-            this.Name.HeaderText = "Имя";
-            this.Name.Name = "Name";
-            this.Name.ReadOnly = true;
+            this.informationTableAdapter1.ClearBeforeFill = true;
             // 
-            // Otchestvo
+            // dataBaseAeportDataSet21
             // 
-            this.Otchestvo.DataPropertyName = "Otchestvo";
-            this.Otchestvo.HeaderText = "Отчество";
-            this.Otchestvo.Name = "Otchestvo";
-            this.Otchestvo.ReadOnly = true;
+            this.dataBaseAeportDataSet21.DataSetName = "DataBaseAeportDataSet2";
+            this.dataBaseAeportDataSet21.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // Document
+            // informationBindingSource2
             // 
-            this.Document.DataPropertyName = "Document";
-            this.Document.HeaderText = "Документ";
-            this.Document.Name = "Document";
-            this.Document.ReadOnly = true;
+            this.informationBindingSource2.DataMember = "Information";
+            this.informationBindingSource2.DataSource = this.dataBaseAeportDataSet21;
             // 
-            // Nomer
+            // informationTableAdapter2
             // 
-            this.Nomer.DataPropertyName = "Nomer";
-            this.Nomer.HeaderText = "Номер документа";
-            this.Nomer.Name = "Nomer";
-            this.Nomer.ReadOnly = true;
-            // 
-            // Grazdanstvo
-            // 
-            this.Grazdanstvo.DataPropertyName = "Grazdanstvo";
-            this.Grazdanstvo.HeaderText = "Гражданство";
-            this.Grazdanstvo.Name = "Grazdanstvo";
-            this.Grazdanstvo.ReadOnly = true;
-            // 
-            // Compania
-            // 
-            this.Compania.DataPropertyName = "Compania";
-            this.Compania.HeaderText = "Компания перелета";
-            this.Compania.Name = "Compania";
-            this.Compania.ReadOnly = true;
-            // 
-            // Class
-            // 
-            this.Class.DataPropertyName = "Class";
-            this.Class.HeaderText = "Класс";
-            this.Class.Name = "Class";
-            this.Class.ReadOnly = true;
-            // 
-            // StrOtpr
-            // 
-            this.StrOtpr.DataPropertyName = "StrOtpr";
-            this.StrOtpr.HeaderText = "Страна и город отправления";
-            this.StrOtpr.Name = "StrOtpr";
-            this.StrOtpr.ReadOnly = true;
-            // 
-            // DateTime
-            // 
-            this.DateTime.DataPropertyName = "DateTime";
-            this.DateTime.HeaderText = "Дата и время отправления";
-            this.DateTime.Name = "DateTime";
-            this.DateTime.ReadOnly = true;
-            // 
-            // StrPrib
-            // 
-            this.StrPrib.DataPropertyName = "StrPrib";
-            this.StrPrib.HeaderText = "Страна и город прибытия";
-            this.StrPrib.Name = "StrPrib";
-            this.StrPrib.ReadOnly = true;
+            this.informationTableAdapter2.ClearBeforeFill = true;
             // 
             // frmMain
             // 
@@ -416,14 +562,18 @@ namespace Aeroport
             this.Text = "Регистрация пассажиров";
             this.Load += new System.EventHandler(this.Form_Data_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.informationBindingSource2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.informationBindingSource4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseAeportDataSet11BindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseAeportDataSet11)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.informationBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.informationBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.users12BindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataBaseAeportDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataBaseAeportDataSet11)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.informationBindingSource3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseAeportDataSet12)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseAeportDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataBaseAeportDataSet21)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.informationBindingSource2)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -456,9 +606,7 @@ namespace Aeroport
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.BindingSource informationBindingSource2;
         private DataBaseAeportDataSet1 dataBaseAeportDataSet11;
-        private System.Windows.Forms.BindingSource informationBindingSource3;
         private DataBaseAeportDataSet1TableAdapters.InformationTableAdapter informationTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Familia;
@@ -472,5 +620,25 @@ namespace Aeroport
         private System.Windows.Forms.DataGridViewTextBoxColumn StrOtpr;
         private System.Windows.Forms.DataGridViewTextBoxColumn DateTime;
         private System.Windows.Forms.DataGridViewTextBoxColumn StrPrib;
+        private System.Windows.Forms.BindingSource dataBaseAeportDataSet11BindingSource;
+        private System.Windows.Forms.DataGridViewTextBoxColumn idDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn familiaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nameDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn otchestvoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn documentDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn nomerDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn grazdanstvoDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn companiaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn classDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn strOtprDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dateTimeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn strPribDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource informationBindingSource4;
+        private DataBaseAeportDataSet1 dataBaseAeportDataSet12;
+        private DataBaseAeportDataSet dataBaseAeportDataSet2;
+        private DataBaseAeportDataSet1TableAdapters.InformationTableAdapter informationTableAdapter1;
+        private DataBaseAeportDataSet2 dataBaseAeportDataSet21;
+        private System.Windows.Forms.BindingSource informationBindingSource2;
+        private DataBaseAeportDataSet2TableAdapters.InformationTableAdapter informationTableAdapter2;
     }
 }

@@ -14,7 +14,7 @@ namespace Aeroport
     
         SqlConnection sqlConnection;
 
-        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\lizam\OneDrive\Документы\OOPKursovik\Aeroport\DataBaseAeport.mdf;Integrated Security=True";
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DataBaseAeport.mdf;Integrated Security=True";
 
         public bool AddNotes(string familia, string name, string otchestvo, string document, string nomer, string grazdanstvo, string compania, string class_, string strOtpr, string dateTime, string strPrib, int userid)
         {

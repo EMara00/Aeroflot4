@@ -8,9 +8,6 @@ namespace Aeroport
 {
     public partial class frmMain : Form
     {
-        
-        GetPass pass = new GetPass();
-
         DataSet ds;
         SqlDataAdapter adapter;
         SqlCommandBuilder commandBuilder;
@@ -22,62 +19,22 @@ namespace Aeroport
         {
             InitializeComponent();
 
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                connection.Open();
-                adapter = new SqlDataAdapter(sql, connection);
-
-                ds = new DataSet();
-                adapter.Fill(ds);
-                dataGridView1.DataSource = ds.Tables[0];
-   
-
-            }
-
-
+            dataGridView1.DataSource = GetPass.getNotes(UserId.GlobalUserId);
         }
 
         private void Form_Data_Load(object sender, EventArgs e)
         {
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "dataBaseAeportDataSet11.Information". При необходимости она может быть перемещена или удалена.
-            this.informationTableAdapter.Fill(this.dataBaseAeportDataSet11.Information);
+            //// TODO: This line of code loads data into the 'dataBaseAeportDataSet21.Information' table. You can move, or remove it, as needed.
+            //this.informationTableAdapter2.Fill(this.dataBaseAeportDataSet21.Information);
+            //// TODO: данная строка кода позволяет загрузить данные в таблицу "dataBaseAeportDataSet11.Information". При необходимости она может быть перемещена или удалена.
+            //this.informationTableAdapter.Fill(this.dataBaseAeportDataSet11.Information);
 
 
-            sqlConnection = new SqlConnection(connectionString);
-
-            sqlConnection.Open();
-
-            SqlCommand command = new SqlCommand("SELECT * FROM [Information]", sqlConnection);
-
-            SqlCommand command_2 = new SqlCommand("SELECT SELECT Id, Familia, Name, Otchestvo, Document, Nomer, Grazdanstvo, Compania, Class, StrOtpr, DateTime, StrPrib FROM Information WHERE userid =@uid");
-
-            command_2.Parameters.Add("@uid", SqlDbType.Int).Value = UserId.GlobalUserId;
 
             dataGridView1.DefaultCellStyle.WrapMode = DataGridViewTriState.True;
-         
 
-        
+            dataGridView1.DataSource = GetPass.getNotes(UserId.GlobalUserId);
 
-
-            using (SqlConnection connection = new SqlConnection(connectionString))
-            {
-                connection.Open();
-                adapter = new SqlDataAdapter(sql, connection);
-
-                ds = new DataSet();
-                adapter.Fill(ds);
-                dataGridView1.DataSource = ds.Tables[0];
-            
-
-
-
-            }
-
-        }
-
-        public void AddPassazir()
-        {
-            informationTableAdapter.Fill(this.dataBaseAeportDataSet1.Information);
         }
 
         //добавляет пользователя
@@ -117,33 +74,7 @@ namespace Aeroport
             }
             else
                 MessageBox.Show("Введите ID!");
-        }
-
-        private void Save_Click(object sender, EventArgs e)
-        {
-           
-            DataSet ds2 = new DataSet();
-            SqlConnection dataBaseConnection = new SqlConnection(connectionString);
-            SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT Id, Familia, Name, Otchestvo, Document, Nomer, Grazdanstvo, Compania, Class, StrOtpr, DateTime, StrPrib FROM Information", dataBaseConnection);
-            //Вторым параметром ты присваиваешь имя для текущей таблицы в датасете
-            dataAdapter.Fill(ds2, "Information");
-            //Здесь указываешь имя нужной таблицы            
-            dataGridView1.DataSource = ds2.Tables["Information"];
-
-            textBox2.Clear();
-            textBox3.Clear();
-            textBox4.Clear();
-            textBox7.Clear();
-            textBox10.Clear();
-
-        }
-
-
-        private void button1_Click(object sender, EventArgs e)
-        {
-            
-        }
- 
+        } 
 
         private void button2_Click(object sender, EventArgs e)
         {

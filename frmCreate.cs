@@ -27,7 +27,6 @@ namespace Aeroport
         List<Field> fields;
 
         AddPass Note = new AddPass();
-        GetPass NotePass = new GetPass();
 
         DataGridView dataGridView1;
         DataSet ds;
@@ -586,7 +585,7 @@ namespace Aeroport
                 db.SaveChanges();
 
                 Note.AddPassajira(db);
-                Owner.dataGridView1.DataSource = NotePass.getNotes(UserId.GlobalUserId);
+                Owner.dataGridView1.DataSource = GetPass.getNotes(UserId.GlobalUserId);
             }
             catch (DbEntityValidationException exc)
             {

@@ -74,10 +74,18 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AddPass.cs" />
+    <Compile Include="DataBaseAeportDataSet1.cs">
+      <DependentUpon>DataBaseAeportDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="DataBaseAeportDataSet1.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>DataBaseAeportDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataBaseAeportDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataBaseAeportDataSet2.xsd</DependentUpon>
     </Compile>
     <Compile Include="DeletePass.cs" />
     <Compile Include="NewFolder1\frmFilter.cs">
@@ -189,6 +197,17 @@
     </None>
     <None Include="DataBaseAeportDataSet1.xss">
       <DependentUpon>DataBaseAeportDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="DataBaseAeportDataSet2.xsc">
+      <DependentUpon>DataBaseAeportDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="DataBaseAeportDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataBaseAeportDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="DataBaseAeportDataSet2.xss">
+      <DependentUpon>DataBaseAeportDataSet2.xsd</DependentUpon>
     </None>
     <None Include="Diagramma.edmx.diagram">
       <DependentUpon>Diagramma.edmx</DependentUpon>

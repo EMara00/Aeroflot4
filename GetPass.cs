@@ -8,14 +8,12 @@ using System.Threading.Tasks;
 
 namespace Aeroport
 {
-    class GetPass
+    public static class GetPass
     {
-        SqlConnection sqlConnection;
-
-        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\lizam\OneDrive\Документы\OOPKursovik\Aeroport\DataBaseAeport.mdf;Integrated Security=True";
-        public DataTable getNotes(int userid)
+        static string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\DataBaseAeport.mdf;Integrated Security=True";
+        public static DataTable getNotes(int userid)
         {
-            sqlConnection = new SqlConnection(connectionString);
+            SqlConnection sqlConnection = new SqlConnection(connectionString);
 
             SqlCommand command = new SqlCommand("SELECT Id, Familia, Name, Otchestvo, Document, Nomer, Grazdanstvo, Compania, Class, StrOtpr, DateTime, StrPrib FROM Information", sqlConnection);
 
@@ -26,9 +24,17 @@ namespace Aeroport
             DataTable table = new DataTable();
 
             adapter.Fill(table);
+            sqlConnection.Close();
 
             return table;
 
+            //DataSet ds2 = new DataSet();
+            //SqlConnection dataBaseConnection = new SqlConnection(connectionString);
+            //SqlDataAdapter dataAdapter = new SqlDataAdapter("SELECT Id, Familia, Name, Otchestvo, Document, Nomer, Grazdanstvo, Compania, Class, StrOtpr, DateTime, StrPrib FROM Information", dataBaseConnection);
+            ////Вторым параметром ты присваиваешь имя для текущей таблицы в датасете
+            //dataAdapter.Fill(ds2, "Information");
+            ////Здесь указываешь имя нужной таблицы            
+            //dataGridView1.DataSource = ds2.Tables["Information"];
         }
 
     }
